@@ -1,0 +1,52 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: "Times New Roman", serif; color: #000; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 77px;
+  padding: 0 50px;
+  background-color: #ea4d4b;
+}
+.logo { color: #fff; font-size: 2rem; }
+
+.menu-blokje {
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+}
+
+.sectie {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 232px;
+  padding: 20px 50px;
+}
+.sectie h2 { font-size: 1.5rem; }
+.sectie-1 { background-color: #f9ca22; }
+.sectie-2 { background-color: #f0922b; }
+.sectie-3 { background-color: #69b04c; }
+
+@media (max-width: 992px) {
+  .navbar { height: 130px; justify-content: center; background-color: #ff6b81; }
+  .logo { font-size: 2.5rem; }
+  .sectie { height: 390px; padding: 20px 22px; color: #fff; font-size: 1.15rem; }
+  .sectie-1 { background-color: #fe4657; }
+  .sectie-2 { background-color: #5352ec; }
+  .sectie-3 { background-color: #3742f9; }
+}
+
+@media (max-width: 600px) {
+  .navbar { height: 74px; justify-content: space-between; padding: 0 17px; background-color: #686de0; }
+  .logo { font-size: 2rem; }
+  .menu-blokje { display: block; }   /* blokje zichtbaar op mobile */
+  .sectie { height: 220px; justify-content: center; align-items: center; text-align: center; padding: 20px 25px; font-size: 1rem; }
+  .sectie-1 { background-color: #7ed6df; }
+  .sectie-2 { background-color: #e056fd; }
+  .sectie-3 { background-color: #30336a; }
+}
